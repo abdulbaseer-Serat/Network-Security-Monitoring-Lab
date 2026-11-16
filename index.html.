@@ -2,153 +2,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Network Engineer Portfolio</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #172033;
-      line-height: 1.6;
-    }
-    header {
-      background: #10213b;
-      color: white;
-      padding: 65px 20px;
-      text-align: center;
-    }
-    header h1 { font-size: 36px; margin: 0; }
-    header p { color: #cbd5e1; }
-    nav {
-      background: #1d3557;
-      padding: 14px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 12px;
-    }
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 25px 18px;
-    }
-    section { margin: 35px 0; }
-    h2 { color: #174477; }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 12px #0000000d;
-    }
-    .tag {
-      color: #1764a0;
-      font-size: 13px;
-      font-weight: bold;
-    }
-    .card a { color: #1764a0; }
-    footer {
-      background: #10213b;
-      color: white;
-      text-align: center;
-      padding: 25px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Network Security Monitoring Lab</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1120;color:#e5edf8;font-family:Arial,sans-serif}
+header{padding:24px;background:#111c30;border-bottom:1px solid #263750}
+header h1{margin:0;color:#38bdf8;font-size:25px}
+header p{color:#94a3b8;margin-bottom:0}
+.container{padding:20px;max-width:1200px;margin:auto}
+.notice{background:#422006;color:#fde68a;padding:12px;border-radius:8px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.card{background:#142238;padding:20px;border-radius:10px;border:1px solid #263750}
+.card h3{font-size:14px;color:#94a3b8;margin-top:0}
+.number{font-size:28px;font-weight:bold;color:#38bdf8}
+.section{margin-top:30px}
+.section h2{color:#38bdf8}
+table{width:100%;border-collapse:collapse;background:#142238;border-radius:8px;overflow:hidden}
+th,td{text-align:left;padding:13px;border-bottom:1px solid #263750;font-size:14px}
+th{color:#94a3b8}
+.status{color:#4ade80}
+.warning{color:#fbbf24}
+.danger{color:#fb7185}
+footer{text-align:center;color:#64748b;padding:30px}
+button{background:#0284c7;color:white;border:0;padding:10px 16px;border-radius:6px;cursor:pointer}
+</style>
 </head>
 <body>
-
 <header>
-  <h1>Network Engineer Portfolio</h1>
-  <p>MikroTik | Cisco | Routing | Switching | Network Security</p>
-  <p>Welcome to my professional networking portfolio.</p>
+<h1>🛡️ Network Security Monitoring Lab</h1>
+<p>Network Infrastructure | Firewall | IDS | Security Operations</p>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
+<main class="container">
+<div class="notice">
+<strong>DEMO MODE:</strong> All displayed monitoring data is simulated.
+This dashboard is not connected to real network devices.
+</div>
 
-<main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an IT Network Engineer interested in network
-      infrastructure, routing, switching, network security,
-      MikroTik and Cisco technologies.
-      I enjoy designing, configuring and troubleshooting
-      computer networks.
-    </p>
-  </section>
+<div class="grid">
+<div class="card">
+<h3>Network Status</h3>
+<div class="number status">ONLINE</div>
+</div>
+<div class="card">
+<h3>Connected Devices</h3>
+<div class="number">48</div>
+</div>
+<div class="card">
+<h3>Active Alerts</h3>
+<div class="number warning" id="alerts">3</div>
+</div>
+<div class="card">
+<h3>Blocked Connections</h3>
+<div class="number danger">127</div>
+</div>
+</div>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <p>
-      MikroTik RouterOS | CAPsMAN | Cisco Networking |
-      VLAN | DHCP | DNS | Routing | Switching |
-      Firewall | Network Troubleshooting
-    </p>
-  </section>
+<div class="section">
+<h2>📡 Network Infrastructure</h2>
+<table>
+<tr><th>Device</th><th>Type</th><th>Status</th><th>Location</th></tr>
+<tr><td>MikroTik Router</td><td>Router</td><td class="status">Online</td><td>Building 1</td></tr>
+<tr><td>Cisco Switch</td><td>Switch</td><td class="status">Online</td><td>Building 2</td></tr>
+<tr><td>Firewall</td><td>Security</td><td class="status">Active</td><td>Main Office</td></tr>
+<tr><td>IDS Sensor</td><td>Suricata IDS</td><td class="status">Running (Demo)</td><td>Monitoring Lab</td></tr>
+</table>
+</div>
 
-  <section id="projects">
-    <h2>My Networking Projects</h2>
+<div class="section">
+<h2>🚨 Security Events</h2>
+<table>
+<tr><th>Event</th><th>Source</th><th>Severity</th><th>Status</th></tr>
+<tr><td>Multiple failed login attempts</td><td>192.0.2.10</td><td class="danger">High</td><td>Blocked (Demo)</td></tr>
+<tr><td>Port scan detected</td><td>198.51.100.20</td><td class="warning">Medium</td><td>Investigating (Demo)</td></tr>
+<tr><td>Unusual traffic detected</td><td>203.0.113.15</td><td class="warning">Medium</td><td>Monitoring (Demo)</td></tr>
+</table>
+</div>
 
-    <div class="projects">
-      <div class="card">
-        <span class="tag">MIKROTIK</span>
-        <h3>CAPsMAN Configuration</h3>
-        <p>Centralized wireless access point management
-        using MikroTik routers.</p>
-        <a href="#">View Project</a>
-      </div>
+<div class="section">
+<h2>🔧 Lab Technologies</h2>
+<div class="grid">
+<div class="card">MikroTik RouterOS</div>
+<div class="card">Cisco Networking</div>
+<div class="card">VLAN & ACL</div>
+<div class="card">Firewall Security</div>
+<div class="card">Suricata IDS</div>
+<div class="card">Zabbix Monitoring</div>
+</div>
+</div>
 
-      <div class="card">
-        <span class="tag">CISCO</span>
-        <h3>VLAN Configuration</h3>
-        <p>Network segmentation and inter-VLAN routing
-        using Cisco switches and routers.</p>
-        <a href="#">View Project</a>
-      </div>
-
-      <div class="card">
-        <span class="tag">NETWORK SECURITY</span>
-        <h3>Firewall Configuration</h3>
-        <p>Firewall rules, access control and network
-        traffic management.</p>
-        <a href="#">View Project</a>
-      </div>
-
-      <div class="card">
-        <span class="tag">NETWORK DESIGN</span>
-        <h3>Enterprise Network Design</h3>
-        <p>Designing network topologies and documenting
-        enterprise infrastructure.</p>
-        <a href="#">View Project</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: github.com/yourusername</p>
-    <p>LinkedIn: Add your LinkedIn profile</p>
-  </section>
+<div class="section">
+<h2>📊 Lab Information</h2>
+<p>Project: Network Security Monitoring Lab</p>
+<p>Environment: Simulated Demonstration</p>
+<p>Future Integration: MikroTik, Cisco, Suricata and Zabbix</p>
+</div>
 </main>
 
-<footer>
-  <p>Network Engineer Portfolio | 2026</p>
-</footer>
-
+<footer>Network Security Monitoring Lab | Portfolio Project</footer>
 </body>
 </html>
