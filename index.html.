@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network Engineer Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #172033;
+      line-height: 1.6;
+    }
+    header {
+      background: #10213b;
+      color: white;
+      padding: 65px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 36px; margin: 0; }
+    header p { color: #cbd5e1; }
+    nav {
+      background: #1d3557;
+      padding: 14px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+    section { margin: 35px 0; }
+    h2 { color: #174477; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px #0000000d;
+    }
+    .tag {
+      color: #1764a0;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .card a { color: #1764a0; }
+    footer {
+      background: #10213b;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Network Engineer Portfolio</h1>
+  <p>MikroTik | Cisco | Routing | Switching | Network Security</p>
+  <p>Welcome to my professional networking portfolio.</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an IT Network Engineer interested in network
+      infrastructure, routing, switching, network security,
+      MikroTik and Cisco technologies.
+      I enjoy designing, configuring and troubleshooting
+      computer networks.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <p>
+      MikroTik RouterOS | CAPsMAN | Cisco Networking |
+      VLAN | DHCP | DNS | Routing | Switching |
+      Firewall | Network Troubleshooting
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>My Networking Projects</h2>
+
+    <div class="projects">
+      <div class="card">
+        <span class="tag">MIKROTIK</span>
+        <h3>CAPsMAN Configuration</h3>
+        <p>Centralized wireless access point management
+        using MikroTik routers.</p>
+        <a href="#">View Project</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">CISCO</span>
+        <h3>VLAN Configuration</h3>
+        <p>Network segmentation and inter-VLAN routing
+        using Cisco switches and routers.</p>
+        <a href="#">View Project</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">NETWORK SECURITY</span>
+        <h3>Firewall Configuration</h3>
+        <p>Firewall rules, access control and network
+        traffic management.</p>
+        <a href="#">View Project</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">NETWORK DESIGN</span>
+        <h3>Enterprise Network Design</h3>
+        <p>Designing network topologies and documenting
+        enterprise infrastructure.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your-email@example.com</p>
+    <p>GitHub: github.com/yourusername</p>
+    <p>LinkedIn: Add your LinkedIn profile</p>
+  </section>
+</main>
+
+<footer>
+  <p>Network Engineer Portfolio | 2026</p>
+</footer>
+
+</body>
+</html>
