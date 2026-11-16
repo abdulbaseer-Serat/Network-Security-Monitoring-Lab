@@ -6,4 +6,4 @@ Open GitHub in Chrome on your Android phone:
 1. Open GitHub⁠
 2. Sign in to your account.
 3. Open your repositories.
-Look for network-security-monitoring-lab.
+Look for network-security-monitoring
