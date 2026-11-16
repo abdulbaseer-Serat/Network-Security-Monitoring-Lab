@@ -9,4 +9,4 @@ Open GitHub in Chrome on your Android phone:
 Look for network-security-monitoring-lab.
 If it exists, open it.
 If it doesn't exist, create a new Public repository with that name.
-Do not create another repository if
+Do not create another repository 
