@@ -2,3 +2,11 @@
 Network Security Monitoring Lab – MikroTik, Cisco, Firewall, IDS and Security Dashboard.
 
 ## Step 1 – Prepare your GitHub project
+Open GitHub in Chrome on your Android phone:
+Open GitHub⁠
+Sign in to your account.
+Open your repositories.
+Look for network-security-monitoring-lab.
+If it exists, open it.
+If it doesn't exist, create a new Public repository with that name.
+Do not create another repository if you already have one.
