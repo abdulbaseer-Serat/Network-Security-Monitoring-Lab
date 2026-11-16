@@ -3,4 +3,3 @@ Network Security Monitoring Lab – MikroTik, Cisco, Firewall, IDS and Security 
 
 ## Step 1 – Prepare your GitHub project
 Open GitHub in Chrome on your Android phone:
-1. 
